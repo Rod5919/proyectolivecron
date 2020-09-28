@@ -1,0 +1,183 @@
+body {
+  margin-top: 0;
+  margin: 0 20%;
+}
+
+body * {
+  text-decoration: none;
+  font-family: bitter;
+}
+
+header {
+  margin-top: 0;
+  position: fixed;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2%;
+  border-bottom: 0.5px solid grey;
+  background-color: white;
+}
+
+header img {
+  height: 10em;
+}
+
+nav * {
+  color: black;
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+
+main > h1 {
+  margin-top: 15%;
+  background-color: #005cb2;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  margin: 1px solid #005cb2;
+  background-color: #005cb2;
+  color: white;
+}
+
+table td {
+  margin: 1px solid #005cb2;
+}
+
+td > a {
+  color: black;
+}
+
+.url:hover {
+  background-color: rgb(106,183,255,0.5);
+}
+
+.malla {
+  width: fit-content;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(16,1fr);
+  overflow-x: scroll;
+  margin-bottom: 5%;
+}
+
+.malla * {
+  font-size: 0.8em;
+  margin: 1px;
+}
+
+.malla > div {
+  display: flex;
+  align-content: center;
+}
+
+.item-3 {
+  grid-column: span 3;
+}
+
+.item-4 {
+  grid-column: span 2;
+}
+
+.item-9 {
+  grid-row: span 3;
+  writing-mode: vertical-lr;
+  font-size: 100%;
+  text-orientation: upright;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  background-color: rgb(64, 202, 216);
+}
+
+.item-51{
+  grid-row: span 4;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  background-color: rgb(64, 202, 216);
+}
+
+.item-number {
+  background-color: rgb(120, 216, 227);
+}
+
+.item-1 {
+  background-color: rgb(255, 217, 120);
+}
+
+.item-2 {
+  background-color: rgb(255, 217, 120);
+}
+
+.item-3 {
+  background-color: rgb(255, 217, 120);
+}
+
+.item-4 {
+  background-color: rgb(255, 217, 120);
+}
+
+.item-6 {
+  background-color: rgb(255, 217, 120);
+}
+
+.materia {
+  background-color: rgb(249, 246, 233);
+}
+
+.materia :hover {
+  background-color: black;
+}
+
+.tg {
+  width: 60%;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.tg * {
+  font-size: 1.1em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+footer > p {
+  margin-left: 5%;
+  font-size: 2em;
+}
+
+footer > div {
+  margin: 5%;
+  font-size: 3em;
+}
+
+.fa-facebook {
+  color: #005cb2;
+  margin: 10px;
+}
+.fa-instagram {
+  color: purple;
+  margin: 10px;
+}
+.fa-linkedin {
+  color: rgb(0,119,181);
+  margin: 10px;
+}
+.fa-github {
+  margin: 10px;
+}
