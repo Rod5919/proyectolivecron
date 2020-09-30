@@ -1,3 +1,4 @@
+/*#region Initial*/
 body {
   margin-top: 0;
   margin: 0 20%;
@@ -8,6 +9,8 @@ body * {
   font-family: bitter;
 }
 
+/* #endregion */
+/* #region header */
 header {
   /* margin-top: 0; */
   top: 0;
@@ -51,6 +54,8 @@ nav a:hover {
   width: 0%;
 }
 
+/* #endregion */
+/* #region main */
 main {
   margin-top: 13%;
 }
@@ -67,6 +72,7 @@ main > h1 {
   border-radius: 5px;
 }
 
+/* boton completado */
 .cards a {
   background-color: #005cb2;
   color: white;
@@ -114,6 +120,8 @@ main > h1 {
   cursor: pointer;
 }
 
+/* #endregion */
+/* #region footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -179,3 +187,5 @@ footer > div {
     margin-top: 130px;
   }
 }
+
+/* #endregion */

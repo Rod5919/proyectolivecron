@@ -1,3 +1,4 @@
+/*#region Initial*/
 body {
   margin-top: 0;
   margin: 0 20%;
@@ -8,6 +9,8 @@ body * {
   font-family: bitter;
 }
 
+/* #endregion */
+/* #region header */
 header {
   /* margin-top: 0; */
   top: 0;
@@ -51,6 +54,8 @@ nav a:hover {
   width: 0%;
 }
 
+/* #endregion */
+/* #region main */
 * {
   box-sizing: border-box;
 }
@@ -72,8 +77,6 @@ body {
   text-align: center;
   font-size: 3em;
 }
-
-/* Mobile First */
 
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
@@ -144,6 +147,8 @@ ul {
   font-size: medium;
 }
 
+/* #endregion */
+/* #region footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -203,3 +208,4 @@ footer > div {
     margin-top: 100px;
   }
 }
+/* #endregion */

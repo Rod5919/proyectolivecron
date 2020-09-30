@@ -1,3 +1,4 @@
+/*#region Initial*/
 body {
   margin-top: 0;
   margin: 0 20%;
@@ -8,6 +9,8 @@ body * {
   font-family: bitter;
 }
 
+/* #endregion */
+/* #region header */
 header {
   /* margin-top: 0; */
   padding-top: .8em;
@@ -51,6 +54,8 @@ nav a:hover {
   width: 0%;
 }
 
+/* #endregion */
+/* #region main */
 main {
   margin-top: 15%;
 }
@@ -62,6 +67,7 @@ main > h1 {
   padding: 2px;
 }
 
+/* Tarjetas */
 .boxes {
   display: flex;
   justify-content: space-around;
@@ -77,6 +83,7 @@ main > h1 {
   padding-bottom: 1%;
 }
 
+/* Boton descargar */
 .text-box > a {
   background-color: #005cb2;
   padding: 3%;
@@ -96,6 +103,8 @@ main > h1 {
   margin: 0 5% 5% 5%;
 }
 
+/* #endregion */
+/* #region footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -161,3 +170,4 @@ footer > div {
     margin-top: 140px;
   }
 }
+/* #endregion */
