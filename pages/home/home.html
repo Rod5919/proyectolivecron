@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="shortcut icon" href="../../assets/Icon.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,12 +12,14 @@
 </head>
 <body>
   <header>
-    <img src="../../assets/Logo.png" alt="">
+    <a href="../home/home.html">
+      <img src="../../assets/Logo.png">
+    </a>
     <nav>
-        <a href="../home/home.html">Inicio</a>
-        <a href="../profile/profile.html">Perfil</a>
-        <a href="../books/">Libros</a>
-        <a href="../tasks/">Tareas</a>
+      <a href="../home/home.html">Inicio</a>
+      <a href="../profile/profile.html">Perfil</a>
+      <a href="../books/books.html">Libros</a>
+      <a href="../tasks/tasks.html">Tareas</a>
     </nav>
   </header>
   
@@ -143,76 +146,167 @@
 
   <h1>Malla Curricular</h1>
   <div class="malla">
-    <div class="item-1">C</div>
-    <div class="item-2">S</div>
-    <div class="item-3">Ciencias Básicas</div>
-    <div class="item-4">Manufactura y prototipado</div>
-    <div class="item-4">Sistemas embebidos</div>
-    <div class="item-6">Sistemas computacionales</div>
-    <div class="item-3">Automatización y control</div>
-    <div class="item-3">Formación generica</div>
-    <div class="item-9">PRIMER CICLO</div>
+    <div class="header-1">C</div>
+    <div class="header-1">S</div>
+    <div class="header-3">Ciencias Básicas</div>
+    <div class="header-2">Manufactura y prototipado</div>
+    <div class="header-2">Sistemas embebidos</div>
+    <div class="header-1">Sistemas computacionales</div>
+    <div class="header-3">Automatización y control</div>
+    <div class="header-3">Formación generica</div>
+    <div class="left-3">PRIMER CICLO</div>
     <div class="item-number">1</div>
-    <div class="materia">MAT-132/ Créditos 5 Cálculo I▪ Req: Ninguno</div><div></div>
-    <div class="materia">MAT-123/ Créditos 5 Álgebra Lineal▪ Req: Ninguno</div><div></div><div></div><div></div><div></div>
-    <div class="materia">SIS-111/ Créditos 6 Introducción a la Programación▪ Req: Ninguno</div>
-    <div class="materia">IMT-141/ Créditos 5 Introducción a la Ing. Mecatrónica▪ Req: Ninguno</div><div></div><div></div><div></div>
-    <div class="materia">CAR-109/ Créditos 5 Escritura Académica▪ Req: Ninguno</div><div></div>
+    <div class="materia" id="MAT-132"><span>MAT-132/ Créditos 5 Cálculo I▪ Req: Ninguno</span></div>
+    <div></div>
+    <div class="materia" id="MAT-123"><span>MAT-123/ Créditos 5 Álgebra Lineal▪ Req: Ninguno</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="SIS-111"><span>SIS-111/ Créditos 6 Introducción a la Programación▪ Req: Ninguno</span></div>
+    <div class="materia" id="IMT-141"><span>IMT-141/ Créditos 5 Introducción a la Ing. Mecatrónica▪ Req: Ninguno</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="CAR-109"><span>CAR-109/ Créditos 5 Escritura Académica▪ Req: Ninguno</span></div>
+    <div></div>
     <div class="item-number">2</div>
-    <div class="materia">MAT-133/ Créditos 5 Cálculo II▪ Req: MAT-132</div>
-    <div class="materia">MAT-142/ Créditos 5 Probabilidad y Estadística I▪ Req: MAT-132</div>
-    <div class="materia">FIS-111/ Créditos 7 Física I y Laboratorio▪ Req: Ninguno</div><div></div><div></div>
-    <div class="materia">IMT-121/ Créditos 7 Circuitos Electrónicos I▪ Req: MAT-123</div><div></div>
-    <div class="materia">SIS-112/ Créditos 6 Programación I▪ Req: SIS-111</div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div class="materia" id="MAT-133"><span>MAT-133/ Créditos 5 Cálculo II▪ Req: MAT-132</span></div>
+    <div class="materia" id="MAT-142"><span>MAT-142/ Créditos 5 Probabilidad y Estadística I▪ Req: MAT-132</span></div>
+    <div class="materia" id="FIS-111"><span>FIS-111/ Créditos 7 Física I y Laboratorio▪ Req: Ninguno</span></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-121"><span>IMT-121/ Créditos 7 Circuitos Electrónicos I▪ Req: MAT-123</span></div>
+    <div></div>
+    <div class="materia" id="SIS-112"><span>SIS-112/ Créditos 6 Programación I▪ Req: SIS-111</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
     <div class="item-number">3</div>
-    <div class="materia">MAT-134/ Créditos 5 Cálculo III▪ Req: MAT-133</div>
-    <div class="materia">FIS-113/ Créditos 7 Electricidad y Electromagnetismo y Laboratorio▪ Req: FIS-111</div>
-    <div class="materia">FIS-112/ Créditos 7 Física II y Laboratorio▪ Req: FIS-111</div><div></div><div></div>
-    <div class="materia">IMT-122/ Créditos 7 Circuitos Electrónicos II▪ Req: IMT-121</div>
-    <div class="materia">IMT-123/ Créditos 7 Circuitos Digitales▪ Req: IMT-121/ SIS-112</div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div class="materia">FHC-140/ Créditos 5 Formación Humano Cristiana I▪ Req: Ninguno</div>
-    <div class="item-9">SEGUNDO CICLO</div>
+    <div class="materia" id="MAT-134"><span>MAT-134/ Créditos 5 Cálculo III▪ Req: MAT-133</span></div>
+    <div class="materia" id="FIS-113"><span>FIS-113/ Créditos 7 Electricidad y Electromagnetismo y Laboratorio▪ Req: FIS-111</span></div>
+    <div class="materia" id="FIS-112"><span>FIS-112/ Créditos 7 Física II y Laboratorio▪ Req: FIS-111</span></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-122"><span>IMT-122/ Créditos 7 Circuitos Electrónicos II▪ Req: IMT-121</span></div>
+    <div class="materia" id="IMT-123"><span>IMT-123/ Créditos 7 Circuitos Digitales▪ Req: IMT-121/ SIS-112</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="FHC-140"><span>FHC-140/ Créditos 5 Formación Humano Cristiana I▪ Req: Ninguno</span></div>
+    <div class="left-3">SEGUNDO CICLO</div>
     <div class="item-number">4</div>
-    <div class="materia">MAT-135/ Créditos 5 Ecuaciones Diferenciales▪ Req: MAT-133</div><div></div><div></div>
-    <div class="materia">IMT-211/ Créditos 5 Mecanismos▪ Req: MAT-133/ FIS-111</div>
-    <div class="materia">IND-202/ Créditos 7 Tecnología Mecánica y Laboratorio▪ Req:FIS-111</div>
-    <div class="materia">IMT-221/ Créditos 7 Circuitos Electrónicos III▪ Req: IMT-122</div><div></div><div></div><div></div>
-    <div class="materia">IMT-241/ Créditos 6 Neumática e Hidráulica▪ Req: FIS-112</div>
-    <div class="materia">IMT-242/ Créditos 6 Máquinas Eléctricas▪ Req: IMT-121/ FIS-113</div><div></div><div></div><div></div>
-    <div class="item-number">5</div><div></div><div></div><div></div>
-    <div class="materia">IMT-212/ Créditos 7 Diseño de Máquinas▪ Req: IMT-211/ IND-202</div><div></div><div></div><div></div>
-    <div class="materia">IMT-231/ Créditos 6 Programación Superior▪ Req: SIS-112</div>
-    <div class="materia">IMT-243/ Créditos 5 Fundamentos de Control▪ Req: MAT-134/ MAT-135</div><div></div>
-    <div class="materia">IMT-244/ Créditos 6 Señales y Sistemas▪ Req: MAT-142/ MAT-135</div><div></div>
-    <div class="materia">IND-260/ Créditos 5 Metodología de la Investigación▪ Req: MAT-142/ CAR-109</div>
-    <div class="materia">FHC-240/ Créditos 5 Formación Humano Cristiana II▪ Req: FHC-140</div>
-    <div class="item-number">6</div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div class="materia">IMT-222/ Créditos 6 Sistemas Embebidos I▪ Req: IMT-123/ IMT-231</div>
-    <div class="materia">SIS-341/ Créditos 6 Sistemas Inteligentes▪ Req: IMT-231</div>
-    <div class="materia">IMT-245/ Créditos 6 Control I▪ Req: IMT-243</div>
-    <div class="materia">IMT-246/ Créditos 6 Electrónica de Potencia▪ Req: IMT-241/ IMT-242/ IMT-221</div>
-    <div class="materia">IMT-247/ Créditos 6 Instrumentación Industrial▪ Req: IMT-122/ IMT-244</div><div></div>
-    <div class="materia">IND-330/ Créditos 6 Preparación y Evaluación de Proyectos de Ingeniería▪ Req: IND-260</div><div></div>
-    <div class="item-51">TERCER CICLO</div>
-    <div class="item-number">7</div><div></div><div></div><div></div>
-    <div class="materia">IMT-311/ Créditos 6 Prototipado Rápido▪ Req: IMT-212/ IMT-222</div>
-    <div class="materia">IMT-312/ Créditos 5 Manufactura Integrada▪ Req: IMT-212</div><div></div>
-    <div class="materia">IMT-322/ Créditos 6 Sistemas Embebidos II▪ Req: IMT-222</div><div></div>
-    <div class="materia">IMT-341/ Créditos 6 Control II▪ Req: IMT-245/ IMT-242</div><div></div>
-    <div class="materia">IMT-344/ Créditos 5 Visión Artificial▪ Req: IMT-244/ SIS-341</div><div></div><div></div>
-    <div class="materia">FHC-340/ Créditos 5 Formación Humano Cristiana III▪ Req: FHC-240</div>
-    <div class="item-number">8</div><div></div><div></div><div></div>
-    <div class="materia">IMT-313/ Créditos 6 Diseño Superior de Ingeniería▪ Req: IMT-311/ IMT-312</div><div></div><div></div><div></div><div></div>
-    <div class="materia">IMT-342/ Créditos 6 Robótica▪ Req: IMT-341/ IMT-322</div><div></div>
-    <div class="materia">IMT-343/ Créditos 6 Automatización Industrial▪ Req: IMT-246/ IMT-341/ IMT-247</div>
-    <div class="materia">IND-243/ Créditos 5 Seguridad y Salud Ocupacional▪ Req: IMT-312</div>
-    <div class="materia">IMT-312/ Créditos 5 Optativa I▪ Req: IND-330</div><div></div>
-    <div class="item-number">9</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div class="materia">IMT-353/ Créditos 15 Taller de Grado I▪ Req: IMT-313</div>
-    <div class="materia">IND-330/ Créditos 5 Optativa II▪ Req: IND-330</div>
-    <div class="materia">IMT-352/ Créditos 5 Práctica Preprofesional▪ Req: IMT-343/ IND-241</div>
-    <div class="item-number">10</div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-    <div class="materia">IMT-354/ Créditos 15 Taller de Grado II▪ Req: IMT-353/IMT-342/IMT-352</div><div></div><div></div>
+    <div class="materia" id="MAT-135"><span>MAT-135/ Créditos 5 Ecuaciones Diferenciales▪ Req: MAT-133</span></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-211"><span>IMT-211/ Créditos 5 Mecanismos▪ Req: MAT-133/ FIS-111</span></div>
+    <div class="materia" id="IND-202"><span>IND-202/ Créditos 7 Tecnología Mecánica y Laboratorio▪ Req:FIS-111</span></div>
+    <div class="materia" id="IMT-221"><span>IMT-221/ Créditos 7 Circuitos Electrónicos III▪ Req: IMT-122</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-241"><span>IMT-241/ Créditos 6 Neumática e Hidráulica▪ Req: FIS-112</span></div>
+    <div class="materia" id="IMT-242"><span>IMT-242/ Créditos 6 Máquinas Eléctricas▪ Req: IMT-121/ FIS-113</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="item-number">5</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-212"><span>IMT-212/ Créditos 7 Diseño de Máquinas▪ Req: IMT-211/ IND-202</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-231"><span>IMT-231/ Créditos 6 Programación Superior▪ Req: SIS-112</span></div>
+    <div class="materia" id="IMT-243"><span>IMT-243/ Créditos 5 Fundamentos de Control▪ Req: MAT-134/ MAT-135</span></div>
+    <div></div>
+    <div class="materia" id="IMT-244"><span>IMT-244/ Créditos 6 Señales y Sistemas▪ Req: MAT-142/ MAT-135</span></div>
+    <div></div>
+    <div class="materia" id="IND-260"><span>IND-260/ Créditos 5 Metodología de la Investigación▪ Req: MAT-142/ CAR-109</span></div>
+    <div class="materia" id="FHC-240"><span>FHC-240/ Créditos 5 Formación Humano Cristiana II▪ Req: FHC-140</span></div>
+    <div class="item-number">6</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-222"><span>IMT-222/ Créditos 6 Sistemas Embebidos I▪ Req: IMT-123/ IMT-231</span></div>
+    <div class="materia" id="SIS-341"><span>SIS-341/ Créditos 6 Sistemas Inteligentes▪ Req: IMT-231</span></div>
+    <div class="materia" id="IMT-245"><span>IMT-245/ Créditos 6 Control I▪ Req: IMT-243</span></div>
+    <div class="materia" id="IMT-246"><span>IMT-246/ Créditos 6 Electrónica de Potencia▪ Req: IMT-241/ IMT-242/ IMT-221</span></div>
+    <div class="materia" id="IMT-247"><span>IMT-247/ Créditos 6 Instrumentación Industrial▪ Req: IMT-122/ IMT-244</span></div>
+    <div></div>
+    <div class="materia" id="IND-330"><span>IND-330/ Créditos 6 Preparación y Evaluación de Proyectos de Ingeniería▪ Req: IND-260</span></div>
+    <div></div>
+    <div class="left-4">TERCER CICLO</div>
+    <div class="item-number">7</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-311"><span>IMT-311/ Créditos 6 Prototipado Rápido▪ Req: IMT-212/ IMT-222</span></div>
+    <div class="materia" id="IMT-312"><span>IMT-312/ Créditos 5 Manufactura Integrada▪ Req: IMT-212</span></div>
+    <div></div>
+    <div class="materia" id="IMT-322"><span>IMT-322/ Créditos 6 Sistemas Embebidos II▪ Req: IMT-222</span></div>
+    <div></div>
+    <div class="materia" id="IMT-341"><span>IMT-341/ Créditos 6 Control II▪ Req: IMT-245/ IMT-242</span></div>
+    <div></div>
+    <div class="materia" id="IMT-344"><span>IMT-344/ Créditos 5 Visión Artificial▪ Req: IMT-244/ SIS-341</span></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="FHC-340"><span>FHC-340/ Créditos 5 Formación Humano Cristiana III▪ Req: FHC-240</span></div>
+    <div class="item-number">8</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-313"><span>IMT-313/ Créditos 6 Diseño Superior de Ingeniería▪ Req: IMT-311/ IMT-312</span></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-342"><span>IMT-342/ Créditos 6 Robótica▪ Req: IMT-341/ IMT-322</span></div>
+    <div></div>
+    <div class="materia" id="IMT-343"><span>IMT-343/ Créditos 6 Automatización Industrial▪ Req: IMT-246/ IMT-341/ IMT-247</span></div>
+    <div class="materia" id="IND-243"><span>IND-243/ Créditos 5 Seguridad y Salud Ocupacional▪ Req: IMT-312</span></div>
+    <div class="materia" id="IMT-312"><span>IMT-312/ Créditos 5 Optativa I▪ Req: IND-330</span></div>
+    <div></div>
+    <div class="item-number">9</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-353"><span>IMT-353/ Créditos 15 Taller de Grado I▪ Req: IMT-313</span></div>
+    <div class="materia" id="IND-330"><span>IND-330/ Créditos 5 Optativa II▪ Req: IND-330</span></div>
+    <div class="materia" id="IMT-352"><span>IMT-352/ Créditos 5 Práctica Preprofesional▪ Req: IMT-343/ IND-241</span></div>
+    <div class="item-number">10</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="materia" id="IMT-354"><span>IMT-354/ Créditos 15 Taller de Grado II▪ Req: IMT-353/IMT-342/IMT-352</span></div>
+    <div></div>
+    <div></div>
   </div>
   <div>
     <h3>Resultados:</h3>
@@ -239,12 +333,14 @@
   <footer>
     <p>Contacto: </p>
     <div>
-      <i class="fa fa-facebook"></i>
-      <i class="fa fa-instagram"></i>
-      <i class="fa fa-linkedin"></i>
-      <i class="fa fa-github"></i>
+      <a href="https://www.facebook.com/serferte"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/sergio5919/"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/sergio-fernandez-testa-5aa66a16b/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/Rod5919"><i class="fa fa-github"></i></a>
     </div>
   </footer>
 </body>
+
+<script src="home.js"></script>
 </html>
 

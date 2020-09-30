@@ -51,97 +51,67 @@ nav a:hover {
   width: 0%;
 }
 
-* {
-  box-sizing: border-box;
+main {
+  margin-top: 13%;
 }
 
-body {
-  font-family: "Quicksand", sans-serif;
-  padding: 0 1.5em;
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
-}
-
-.logo {
-  text-align: center;
-  font-size: 3em;
-}
-
-/* Mobile First */
-
-.contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-}
-
-.contact-wrapper > * {
-  padding: 1em;
-}
-
-.contact-form form label {
-  display: block;
-}
-
-.contact-form form p {
-  margin: 0;
-  padding: 1em;
-}
-
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
-  width: 100%;
-  padding: 0.7em;
-  border: none;
-  background: none;
-  outline: 0;
-  border-bottom: 1px solid #005cb2;
-}
-
-.contact-form form button {
-  background: #005cb2;
-  border: 0;
-  text-transform: uppercase;
-  padding: 1em;
+main > h1 {
+  background-color: #005cb2;
   color: white;
 }
 
-.contact-form form button:hover,
-.contact-form form button:focus {
-  background: #1c2d6f;
-  color: #fff;
-  transition: background-color 1s ease-out;
-  outline: 0;
+.card-text {
+  border: 1px solid #424242;
+  margin: 1% 0; /* verticales horizontales*/
+  padding: 0 3% 4% 3%;
+  border-radius: 5px;
 }
 
-.contact-form form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.cards a {
+  background-color: #005cb2;
+  color: white;
+  padding: 1.2%;
+  border-radius: 3px;
+  text-align: end;
 }
 
-.contact-form form .block {
-  grid-column: 1 / 3;
+.cards a:hover {
+  cursor: pointer;
+  background-color: #005cb280;
 }
 
-.contact-info h4,
-.contact-info ul,
-.contact-info p {
+.complete {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add h2{
+  margin-right: 2px;
+  flex-grow: 2;
   text-align: center;
-  margin: 0 0 1rem 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.linea {
+  width: 32%;
+  background: linear-gradient(180deg, #fff 30%, #000 40%, #fff 30%);
+  flex-grow: 3;
 }
 
-.material-icons {
-  font-size: medium;
+.plus {
+  margin: 5px;
+  border: 1px solid #424242;
+  padding: 1% 1.2%;
+  border-radius: 50%;
+}
+
+.plus:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -198,8 +168,14 @@ footer > div {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1500px) {
   body {
     margin-top: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    margin-top: 130px;
   }
 }
