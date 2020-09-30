@@ -1,11 +1,19 @@
-var q_fullname = document.getElementById("fullname");
-var q_email = document.getElementById("email");
-var q_phone = document.getElementById("phone");
-var q_subject = document.getElementById("subject");
-var q_mat_1 = document.getElementById("mat-1");
-var q_mat_2 = document.getElementById("mat-2");
-var q_mat_3 = document.getElementById("mat-3");
-var q_mat_4 = document.getElementById("mat-4");
-var q_mat_5 = document.getElementById("mat-5");
-var q_mat_6 = document.getElementById("mat-6");
-var q_message = document.getElementById("message");
+function get_values() {
+  let user = {
+  "fullname":document.getElementById("fullname").value,  
+  "email":document.getElementById("email").value,
+  "phone":document.getElementById("phone").value,
+  "subject":document.getElementById("subject").value,
+  "mat-1":document.getElementById("mat-1").value,
+  "mat-2":document.getElementById("mat-2").value,
+  "mat-3":document.getElementById("mat-3").value,
+  "mat-4":document.getElementById("mat-4").value,
+  "mat-5":document.getElementById("mat-5").value,
+  "mat-6":document.getElementById("mat-6").value,
+  "message":document.getElementById("message").value
+  };
+
+  fs.writeFileSync(path.resolve(__dirname, 'profile.json'), JSON.stringify(user));
+}
+
+var sendbutt = document.getElementById('send').addEventListener("click", get_values);
