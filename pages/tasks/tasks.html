@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Tareas</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
   <link rel="shortcut icon" href="../../assets/Icon.jpg" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,49 +24,80 @@
   </header>
   
   <main>
-    <section class="cards">
-      <div class="card-text">
-        <h2>Control 1</h2>
-        <h3>Práctica preparatoria</h3>
-        <p>Realizar la práctica preparatoria para estudiar par el primer parcial, la práctica no vale nota.</p>
-      <p>4 de Octubre de 2020</p>
-      <div class="complete"><a>Completado</a></div>
-    </div>
-    <div class="card-text">
-      <h2>Sistemas Inteligentes</h2>
-      <h3>Predicción</h3>
-      <p>Pedecir si es posible jugar tenis en base a 4 variables.</p>
-      <p>25 de Septiembre de 2020</p>
-      <div class="complete"><a>Completado</a></div>
-    </div>
-    <div class="card-text">
-      <h2>Prototipado rápido</h2>
-      <h3>Primera presentación de proyecto</h3>
-      <p>Realizar avances del proyecto en SolidWorks.</p>
-      <p>5 de Octubre de 2020</p>
-      <div class="complete"><a>Completado</a></div>
-    </div>
-    <div class="card-text">
-      <h2>Preparación y Evaluación de Proyectos de Ingeniería</h2>
-      <h3>Corrección de perfil</h3>
-      <p>Corregir mi parte del proyecto grupal, límites y alcances</p>
-      <p>31 de Septiembre de 2020</p>
-      <div class="complete"><a>Completado</a></div>
-    </div>
-  </section>
-  <section class="add">
-    <div class="linea">
-      <br>
-    </div>
-    <div class="plus">
-      <i class="fa fa-plus"></i>
-    </div>
-    <h2>Añadir nueva tarea</h2>
-    <div class="linea">
-      <br>
-    </div>
-  </section>
+    <section class="cards" id="cards"> 
+      <div class="card-text" id="card-1">
+          <h2>Control 1</h2>
+          <h3>Práctica preparatoria</h3>
+          <p>Realizar la práctica preparatoria para estudiar par el primer parcial, la práctica no vale nota.</p>
+        <p>4 de Octubre de 2020</p>
+        <div class="complete" id="card-1_child"><a>Completado</a></div>
+      </div>
+      <div class="card-text" id="card-2">
+        <h2>Sistemas Inteligentes</h2>
+        <h3>Predicción</h3>
+        <p>Pedecir si es posible jugar tenis en base a 4 variables.</p>
+        <p>25 de Septiembre de 2020</p>
+        <div class="complete" id="card-2_child"><a>Completado</a></div>
+      </div>
+      <div class="card-text" id="card-3">
+        <h2>Prototipado rápido</h2>
+        <h3>Primera presentación de proyecto</h3>
+        <p>Realizar avances del proyecto en SolidWorks.</p>
+        <p>5 de Octubre de 2020</p>
+        <div class="complete" id="card-3_child"><a>Completado</a></div>
+      </div>
+      <div class="card-text" id="card-4">
+        <h2>Preparación y Evaluación de Proyectos de Ingeniería</h2>
+        <h3>Corrección de perfil</h3>
+        <p>Corregir mi parte del proyecto grupal, límites y alcances</p>
+        <p>31 de Septiembre de 2020</p>
+        <div class="complete" id="card-4_child"><a>Completado</a></div>
+      </div>
+    </section>
+    <section class="add" id="add-task">
+      <div class="linea">
+        <br>
+      </div>
+      <div class="plus" >
+        <i class="fa fa-plus"></i>
+      </div>
+      <h2>Añadir nueva tarea</h2>
+      <div class="linea">
+        <br>
+      </div>
+    </section>
   </main>
+    <section class="add-task-form">
+      <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+        <h1>Nueva Tarea</h1>
+        <label for="subj"><b>Materia</b></label>
+        <br>
+        <select name="subjects" id="subjects">
+          <option class="subjects-content" value="Instrumentación industrial">Instrumentación industrial</option>
+          <option class="subjects-content" value="Manufactura integrada">Manufactura integrada</option>
+          <option class="subjects-content" value="Control 1">Control 1</option>
+          <option class="subjects-content" value="Prototipado rápido">Prototipado rápido</option>
+          <option class="subjects-content" value="Preparación y evaluación de proyectos">Preparación y evaluación de proyectos</option>
+          <option class="subjects-content" value="Sistemas inteligentes">Sistemas inteligentes</option>
+        </select>
+        <br><br>
+        
+        <label for="titulo"><b>Título</b></label>
+        <input id="titulo" type="text" placeholder="Ingrese el título" name="email" required>
+
+        <label for="deadline"><b>Finaliza</b></label><br>
+        <input id="deadline" type="date" placeholder="Ingrese el título" name="email" required><br><br>
+    
+        <label for="psw"><b>Descripción</b></label><br>
+        <textarea name="descript" id="descript" rows="3"></textarea>
+        
+        <button type="button" class="btn" id="add">Añadir</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+
+      </form>
+    </div>
+  </section>
   <footer>
     <p>Contacto: </p>
     <div>
@@ -77,5 +108,6 @@
     </div>
   </footer>
 </body>
+<script src="tasks.js"></script>
 </html>
 

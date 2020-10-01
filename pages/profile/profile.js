@@ -1,5 +1,7 @@
+let user = {};
+
 function get_values() {
-  let user = {
+  user = {
   "fullname":document.getElementById("fullname").value,  
   "email":document.getElementById("email").value,
   "phone":document.getElementById("phone").value,
@@ -12,8 +14,6 @@ function get_values() {
   "mat-6":document.getElementById("mat-6").value,
   "message":document.getElementById("message").value
   };
-
-  fs.writeFileSync(path.resolve(__dirname, 'profile.json'), JSON.stringify(user));
 }
 
 var sendbutt = document.getElementById('send').addEventListener("click", get_values);
