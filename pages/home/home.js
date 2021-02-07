@@ -54,7 +54,7 @@ var materiadict ={
 
 var mc = 0;
 var ma = 0;
-var mf = 51;
+var mf = 49;
 
 var myFunction = function() {
     var attribute = this.id;
